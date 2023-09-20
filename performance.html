@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fahkwang:wght@600&family=Itim&family=K2D&family=Mali:wght@400;700&family=Mitr:wght@500&family=Pattaya&display=swap');
+
+        body {
+            background-color: aliceblue;
+            font-family: 'Mitr', sans-serif;
+        }
+
+        .custom-modal-size {
+            max-width: 1000px;
+            max-height: 1000px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar bg-dark">
+        <div class="container-fluid d-flex justify-content-center align-items-center">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo mirrorless.png" alt="Logo" height="80" class="d-inline-block align-text-top ">
+                <p class="fw-bold text-center " style="color: white;"> PERFORMANCE </p>
+            </a>
+        </div>
+    </nav>
+    <div class="container mt-5 text-center">
+        <div class="row">
+            <div class="col-md-3">
+                <!-- กล่องที่ 1 -->
+                <div class="box">
+                    <a class="nav-link" data-bs-toggle="modal" data-bs-target="#myModal">
+                        <img src="img/per.1.jpg" alt="รูปภาพ 1" class="img-fluid">
+                    </a>
+                    <p class="fw-bold mt-3"> ผลงานภาพถ่ายอาหาร </p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <!-- กล่องที่ 2 -->
+                <div class="box">
+                    <a class="nav-link" data-bs-toggle="modal" data-bs-target="#myModal">
+                        <img src="img/per.2.jpg" alt="รูปภาพ 2" class="img-fluid">
+                    </a>
+                    <p class="fw-bold mt-3"> ผลงานภาพถ่ายเครื่องดื่ม </p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <!-- กล่องที่ 3 -->
+                <div class="box">
+                    <a class="nav-link" data-bs-toggle="modal" data-bs-target="#myModal">
+                        <img src="img/per.3.jpg" alt="รูปภาพ 3" class="img-fluid">
+                    </a>
+                    <p class="fw-bold mt-3"> ผลงานภาพถ่ายเสื้อผ้าแฟชั่น</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <!-- กล่องที่ 4 -->
+                <div class="box">
+                    <a class="nav-link" data-bs-toggle="modal" data-bs-target="#myModal">
+                        <img src="img/per.4.jpg" alt="รูปภาพ 4" class="img-fluid">
+                    </a>
+                    <p class="fw-bold mt-3"> ผลงานภาพถ่ายสกินแคร์</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5 text-center">
+        <div class="row">
+            <div class="col-md-3">
+                <!-- กล่องที่ 1 -->
+                <div class="box">
+                    <a class="nav-link" data-bs-toggle="modal" data-bs-target="#myModal">
+                        <img src="img/per.5.jpg" alt="รูปภาพ 1" class="img-fluid">
+                    </a>
+                    <p class="fw-bold mt-3"> ผลงานภาพถ่ายผู้คน / นายแบบ / ศิลปิน </p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <!-- กล่องที่ 2 -->
+                <div class="box">
+                    <a class="nav-link" data-bs-toggle="modal" data-bs-target="#myModal">
+                        <img src="img/per.6.jpg" alt="รูปภาพ 2" class="img-fluid">
+                    </a>
+                    <p class="fw-bold mt-3"> ผลงานภาพถ่ายทิวทัศน์ </p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <!-- กล่องที่ 3 -->
+                <div class="box">
+                    <a class="nav-link" data-bs-toggle="modal" data-bs-target="#myModal">
+                        <img src="img/per.7.jpg" alt="รูปภาพ 3" class="img-fluid">
+                    </a>
+                    <p class="fw-bold mt-3"> ผลงานภาพถ่ายสถานที่ท่องเที่ยว</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <!-- กล่องที่ 4 -->
+                <div class="box">
+                    <a class="nav-link" data-bs-toggle="modal" data-bs-target="#myModal">
+                        <img src="img/per.8.jpg" alt="รูปภาพ 4" class="img-fluid">
+                    </a>
+                    <p class="fw-bold mt-3"> ผลงานภาพถ่ายสัวต์เลี้ยง</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar-expand-sm navbar-light bg-dark">
+        <footer class="text-center p-5 mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <p style="color: white;">
+                            <i class="fas fa-copyright"></i> &copy; NUTTIYA 2023
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </nav>
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog custom-modal-size"">
+            <div class=" modal-content bg-body-secondary">
+            <div class="modal-header">
+                <h5 class="modal-title"><B>PERFORMANCE</B></h5>
+                <button class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-3 mt-2">
+                        <img src="https://i.pinimg.com/750x/ca/19/f6/ca19f6677db061338788991236847e79.jpg"
+                            class="img-fluid" alt="รูปภาพ 1">
+                    </div>
+                    <div class="col-md-3 mt-2">
+                        <img src="https://i.pinimg.com/564x/45/d7/96/45d796ff8337ede88580595736978822.jpg"
+                            class="img-fluid" alt="รูปภาพ 2">
+                    </div>
+                    <div class="col-md-3 mt-2">
+                        <img src="https://i.pinimg.com/564x/98/8c/1e/988c1efa3bc30c69fb79f100f376c8d8.jpg"
+                            class="img-fluid" alt="รูปภาพ 3">
+                    </div>
+                    <div class="col-md-3 mt-2">
+                        <img src="https://i.pinimg.com/564x/53/8c/74/538c7435fe117764242f03a5881cae0f.jpg"
+                            class="img-fluid" alt="รูปภาพ 4">
+                    </div>
+                    <div class="col-md-3 mt-2">
+                        <img src="https://i.pinimg.com/564x/51/f5/51/51f5512df63ce982f610212774595f1e.jpg"
+                            class="img-fluid" alt="รูปภาพ 5">
+                    </div>
+                    <div class="col-md-3 mt-2">
+                        <img src="https://i.pinimg.com/564x/a1/72/a4/a172a4f8231be88546b40497c47365e8.jpg"
+                            class="img-fluid" alt="รูปภาพ 6">
+                    </div>
+                    <div class="col-md-3 mt-2">
+                        <img src="https://i.pinimg.com/564x/b2/75/e0/b275e065ed958ed9b20cbfe617125fba.jpg"
+                            class="img-fluid" alt="รูปภาพ 7">
+                    </div>
+                    <div class="col-md-3 mt-2">
+                        <img src="https://i.pinimg.com/564x/e1/bb/ef/e1bbeff4d19c8a25a7660f4fa5fdf293.jpg"
+                            class="img-fluid" alt="รูปภาพ 8">
+                    </div>
+                    <div class="col-md-3 mt-2">
+                        <img src="https://i.pinimg.com/564x/b4/4c/49/b44c49c3fcf14635a6b93f2129be028d.jpg"
+                            class="img-fluid" alt="รูปภาพ 9">
+                    </div>
+                    <div class="col-md-3 mt-2">
+                        <img src="https://i.pinimg.com/564x/56/e3/1c/56e31cb6299af1f05b505541c8cd4b49.jpg"
+                            class="img-fluid" alt="รูปภาพ 10">
+                    </div>
+                    <div class="col-md-3 mt-2">
+                        <img src="https://i.pinimg.com/564x/9a/7c/51/9a7c5140ef313db6f3b831a5bcf8b985.jpg"
+                            class="img-fluid" alt="รูปภาพ 11">
+                    </div>
+                    <div class="col-md-3 mt-2">
+                        <img src="https://i.pinimg.com/564x/4e/8a/0d/4e8a0d66ff45aa1d980a1416ce746905.jpg"
+                            class="img-fluid" alt="รูปภาพ 12">
+                    </div>
+                    <div class="col-md-3 mt-2">
+                        <img src="https://i.pinimg.com/564x/5f/93/de/5f93defe9a8fbf832fbcb8226f2a5015.jpg"
+                            class="img-fluid" alt="รูปภาพ 13">
+                    </div>
+                    <div class="col-md-3 mt-2">
+                        <img src="https://i.pinimg.com/564x/9b/6b/7a/9b6b7a25188ede708e7f06314599856c.jpg"
+                            class="img-fluid" alt="รูปภาพ 14">
+                    </div>
+                    <div class="col-md-3 mt-2">
+                        <img src="https://i.pinimg.com/564x/52/d5/9f/52d59f65ea17ede593821dc820b6eb6b.jpg"
+                            class="img-fluid" alt="รูปภาพ 15">
+                    </div>
+                    <div class="col-md-3 mt-2">
+                        <img src="https://i.pinimg.com/564x/40/bd/2e/40bd2efbc7c4d77f5d337eb2a60f8505.jpg"
+                            class="img-fluid" alt="รูปภาพ 16">
+                    </div>
+                    <div class="col-md-3 mt-2">
+                        <img src="https://i.pinimg.com/564x/a8/85/7c/a8857c4f54fa599f78204bd9df9486b0.jpg"
+                            class="img-fluid" alt="รูปภาพ 17">
+                    </div>
+                    <div class="col-md-3 mt-2">
+                        <img src="https://i.pinimg.com/564x/a0/c8/ff/a0c8fff47b1aa0ed44ec69dd09b9b204.jpg"
+                            class="img-fluid" alt="รูปภาพ 18">
+                    </div>
+                    <div class="col-md-3 mt-2">
+                        <img src="https://i.pinimg.com/564x/ca/8d/9a/ca8d9a0b78ebb7daadca99f94f682cd6.jpg"
+                            class="img-fluid" alt="รูปภาพ 19">
+                    </div>
+                    <div class="col-md-3 mt-2">
+                        <img src="https://i.pinimg.com/564x/ac/ef/6b/acef6b09b593f47ef59f10dc84b2e8ec.jpg"
+                            class="img-fluid" alt="รูปภาพ 20">
+                    </div>
+                    <div class="col-md-3 mt-2">
+                        <img src="https://i.pinimg.com/564x/bc/09/10/bc0910dc986194dcd0582283b9c11622.jpg"
+                            class="img-fluid" alt="รูปภาพ 21">
+                    </div>
+                    <div class="col-md-3 mt-2">
+                        <img src="https://i.pinimg.com/564x/33/c9/be/33c9be56510b983fbfcb1ea240c62fc2.jpg"
+                            class="img-fluid" alt="รูปภาพ 22">
+                    </div>
+                    <div class="col-md-3 mt-2">
+                        <img src="https://i.pinimg.com/564x/58/03/8f/58038fc22551ddfcef2a90d8999f18df.jpg"
+                            class="img-fluid" alt="รูปภาพ 23">
+                    </div>
+                    <div class="col-md-3 mt-2">
+                        <img src="https://i.pinimg.com/564x/89/f1/33/89f133055acf82af821a97c1dd073fe9.jpg"
+                            class="img-fluid" alt="รูปภาพ 24">
+                    </div>
+                    <div class="col-md-3 mt-2">
+                        <img src="https://i.pinimg.com/564x/4e/1d/45/4e1d455bba57f486e1848614ce5f0e21.jpg"
+                            class="img-fluid" alt="รูปภาพ 25">
+                    </div>
+                    <div class="col-md-3 mt-2">
+                        <img src="https://i.pinimg.com/564x/8f/fb/07/8ffb07ebc20938b01439693b7f7047c1.jpg"
+                            class="img-fluid" alt="รูปภาพ 25">
+                    </div>
+                    <div class="col-md-3 mt-2">
+                        <img src="https://i.pinimg.com/564x/b8/b6/6f/b8b66fbc8235a54c22001a5e78af5a40.jpg"
+                            class="img-fluid" alt="รูปภาพ 26">
+                    </div>
+                    <div class="col-md-3 mt-2">
+                        <img src="https://i.pinimg.com/564x/40/7f/37/407f37c960cced36455fda6db1e0fa5b.jpg"
+                            class="img-fluid" alt="รูปภาพ 27">
+                    </div>
+                </div>
+            </div>
+
+</body>
+
+</html>

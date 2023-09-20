@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fahkwang:wght@600&family=Itim&family=K2D&family=Mali:wght@400;700&family=Mitr:wght@500&family=Pattaya&display=swap');
+
+        body {
+            background-color: aliceblue;
+            font-family: 'Mitr', sans-serif;
+        }
+
+        .custom-modal-size {
+            max-width: 800px;
+            max-height: 600px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-light bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo mirrorless.png" height="100" class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar1">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbar1" class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link"><B style="color: white; font-size: x-large;">HOME</B></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link"><B style="color: white;font-size: x-large;">ABOUT</B></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="services.html" class="nav-link"><B
+                                style="color: white;font-size: x-large;">SERVICE</B></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="performance.html" class="nav-link"><B
+                                style="color: white;font-size: x-large;">PERFORMANCE</B></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="modal" data-bs-target="#myModal"><B
+                                style="color: white;font-size: x-large;">CONTACT US</B>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class=" text-center">
+                    <p class="fw-bold" style="font-size: 5vh;">
+                        " WELCOME TO PHOTOGRAPHER.... " </p>
+                    <p class="fw-bold">การันตีด้วยการให้บริการด้วยใจมายาวนานกว่า 7 ปี </p>
+                    <p class="fw-bold">ด้วยความมุ่งมั่นในการให้บริการรับถ่ายภาพสินค้าคุณภาพระดับมืออาชีพแต่ราคาย่อมเยาว์
+                        จึงได้รับความไว้วางใจจากลูกค้ามากมาย</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="carouselExampleIndicators" class="carousel slide mt-3">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                aria-label="Slide 6"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://storage.googleapis.com/fastwork-static/42077072-1f00-4a23-93bb-8c834337342a.jpg"
+                    class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://storage.googleapis.com/fastwork-static/0ef92083-6f88-4a9a-9625-bdda84d533ef.jpg"
+                    class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://storage.googleapis.com/fastwork-static/2d55af74-bdad-4f5a-8cd2-23899394a011.jpg"
+                    class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://storage.googleapis.com/fastwork-static/61a5481a-2a11-4c40-bc18-71f1e03be66c.jpg"
+                    class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://storage.googleapis.com/fastwork-static/7f281c18-7059-47bd-a55b-53aaae915f73.jpg"
+                    class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="..." class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <section id="performance">
+        <div class=" text-center ">
+            <div class="container mt-5">
+                <div class="row ">
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <a href="https://example.com/link1">
+                                <img src="img/pic1.jpg" class="card-img-top" alt="รูปภาพ 1">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <a href="https://example.com/link1">
+                                <img src="img/pic2.jpg" class="card-img-top" alt="รูปภาพ 2">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <a href="https://example.com/link1">
+                                <img src="img/pic3.jpg" class="card-img-top" alt="รูปภาพ 3">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <div class="clearfix mt-5 text-center">
+        <img src="img/article.1.jpg" class="col-md-6 float-md-end mb-3 ms-md-3 img-fluid" alt="...">
+        <p class="fw-bold " style="font-size: 3vh;">
+            6 เทคนิคถ่ายรูปจากมือถือสำหรับมือใหม่ให้ว้าวเหมือนมืออาชีพ
+        </p>
+        <p>
+            ปัจจุบันการถ่ายรูปกลายเป็นกิจกรรมสุดโปรดหรือเป็นงานอดิเรกของใครหลายๆ คนไปแล้ว
+            โดยเฉพาะวัยรุ่นหนุ่มสาวทั้งหลายที่ติดใจการถ่ายรูปและเริ่มหาซื้อกล้องเป็นของตัวเอง
+            แต่หากใครที่ยังไม่มีกล้องเป็นของตัวเองแต่อยากถ่ายรูปให้ได้แบบมืออาชีพ
+            เรามี 6 เทคนิคง่ายๆ ที่จะช่วยให้รูปที่ถ่ายจากกล้องมือถือออกมาสวยว้าวได้ไม่แพ้กัน ลองทำตามกันได้เลย
+        </p>
+        <p> 1. จัดมุมกล้องให้เหมาะหากอยากนำรูปไปใส่กรอบ
+            หากอยากถ่ายรูปสวยๆ ไปใส่กรอบ อาจต้องลองเปลี่ยนมุมในการถ่าย
+            โดยนึกถึงกรอบที่เราอยากจะนำไปใส่และปรับเปลี่ยนมุมกล้องไปเรื่อยๆ ให้เข้ากับกรอบรูป
+            อาจจะลองซูมหรือใช้โหมดอื่นๆ ในการถ่าย เช่น โหมดพาโนรามา เพื่อให้สามารถเก็บรายละเอียดในมุมกว้างได้ครบถ้วน
+        </p>
+        <p> 2. สร้างกรอบให้รูปด้วยตัวเอง
+            มีแค่กล้องมือถือก็สามารถใส่กรอบให้รูปด้วยตัวเองได้ แค่ลองเปลี่ยนมุมหรือเลือกถ่ายจุดที่มีลักษณะเป็นกรอบ
+            เช่น บริเวณกรอบประตูหรือหน้าต่างที่เป็นทรงสี่เหลี่ยม
+            หรืออาจจะเลือกมุมที่ฉากหลังมีลักษณะเป็นกรอบก็ช่วยทำให้รูปออกมาดูสวยแปลกตา
+        </p>
+        <p> 3. ใช้เส้นนำสายตาทำให้รูปดูมีมิติ
+            จุดเด่นที่จะทำให้รูปสวยงาม ให้ลองมองหาสิ่งที่เรียกว่า เส้นนำสายตา (Leading Line)
+            ซึ่งเส้นนำสายตานี้จะทำให้รูปที่ถ่ายดูมีมิติ
+            จากเดิมที่เป็นรูปถ่ายธรรมดา เมื่อมีการจัดมุมให้เห็นเส้นนำสายตารูปก็จะดูลึกเข้าไป
+        </p>
+        <p>4. จัดองค์ประกอบรูปให้เป็นจำนวนคี่
+            เทคนิคนี้จะเป็นการเล่นกับองค์ประกอบของรูป โดยเน้นให้เป็นจำนวนคี่เพื่อที่จะทำให้รูปดูน่าดึงดูดมากยิ่งขึ้น
+            เพราะโดยปกติแล้วเมื่อองค์ประกอบหรือวัตถุในรูปเป็นจำนวนคู่ สายตาเราจะถูกสมองสั่งให้จับคู่สิ่งๆ
+            นั้นโดยอัตโนมัติ
+        </p>
+        <p>5. อย่าลืมเรื่องสมมาตร
+            สำหรับมือใหม่ การจะถ่ายรูปให้ออกมาสวยเหมือนมืออาชีพต้องไม่ละเลยเรื่องของสมมาตร หรือความสมดุลของรูปภาพ
+            ในการถ่ายรูปบางสไตล์ความสมดุลอาจไม่จำเป็น แต่หากเป็นมือใหม่แล้วถือว่าจำเป็นอย่างมาก
+            ซึ่งมือถือรุ่นใหม่ก็สามารถช่วยในเรื่องนี้ได้
+        </p>
+        <p>6. ใช้จุดตัดทำให้ภาพดูน่าสนใจ
+            ในการจะถ่ายรูปโดยคำนึงถึงสมมาตรหรือความสมดุล นอกจากจะใช้ฟีเจอร์ต่างๆ ที่มากับมือถือแล้ว ยังสามารถใช้ฟีเจอร์
+            Grid ที่ระบุจุดตัด 9 ช่อง แบบ 3×3 ได้
+            โดยเฉพาะมือใหม่ที่อยากได้รูปสวยๆ แบบมืออาชีพ ฟีเจอร์นี้เป็นอีกตัวช่วยที่จะขาดไม่ได้เลย
+        </p>
+    </div>
+    <div class="clearfix mt-5 text-center ">
+        <div class="row ">
+            <div class="col-md-6 justify-content-between">
+                <img src="img/article.2.jpg" class="img-fluid" alt="...">
+            </div>
+            <div class="col-md-6 text-start text-center">
+                <p class="fw-bold " style="font-size: 3vh;">
+                    ทางลัด การถ่ายภาพให้สวยได้อย่างมืออาชีพ
+                    การถ่ายรูปจะเป็นเรื่องง่ายโดยทันที ถ้าเรารู้จักวิธีการใช้ทางลัด
+                    มาเป็นตัวช่วยสำหรับการถ่ายภาพให้สวยง่ายๆแบบมืออาชีพ
+                </p>
+                <p>
+                    1. กฏ 3 ส่วน
+                    วิธีการคือแบ่งภาพออกเป็น 3 ส่วนเท่าๆ กัน จะแนวตั้งหรือแนวนอนก็ได้ และให้สิ่งที่เราอยากจะเน้น
+                    หรือดูมีน้ำหนัก
+                    ดูตันกว่าใช้พื้นที่ภาพ 1 ส่วน โดยอีก 2 ส่วนที่เหลือให้เป็นวัตถุหรืออะไรก็ได้ที่เบาๆ
+                    อาจจะเป็นฉากหลังเปล่าๆ เบลอๆ
+                </p>
+                <p>
+                    2. ตาราง 9 ช่อง
+                    คือการแบ่งภาพออกเป็น 9 ช่องเท่าๆ กันค่ะ สำหรับกฏตัวนี้ยังคงอยู่ในเรื่องของการจัดองค์ประกอบของภาพอยู่
+                    โดยช่างภาพมักจะนำสิ่งที่ต้องการนำเสนอไปวางไว้ตรงจุดตัดไม่ที่ใดก็ที่หนึ่ง
+                    เพราะบริเวณจุดตัดนั้นเป็นที่ที่คนให้ความสนใจที่จะมองก่อน
+                    สำหรับกฏนี้ มักจะใช้ร่วมกับ กฏ 3 ส่วน
+                </p>
+                <p>
+                    3. เล่นกับเส้น
+                    จะเล่นกับเส้น หรือกับแพทเทิร์นก็ได้ค่ะ ไม่ว่าจะเป็นเส้นที่ไปในทางเดียวกัน เส้นในลักษณะที่ตัดกัน
+                    สิ่งเหล่านี้ทำให้ภาพดูน่าสนใจขึ้นมากๆ ค่ะ
+                    สำหรับเส้นมันเหมือนการนำสายตาไปสู่จุดที่จะโฟกัส
+                    ส่วนแพทเทิร์นหรืออะไรที่เหมือนๆ กันทั้งภาพ เมื่อมีอะไรสักอย่างที่แปลกไป
+                    สิ่งนั้นจะกลายเป็นจุดเด่นของภาพ
+                </p>
+                <p>
+                    4. window lighting
+                    มันเป็นแสงที่วิเศษมากค่ะ เราจะได้แสงสว่างแบบมีทิศทางและได้ส่วนที่มืดของภาพอย่างพอดี
+                    ยิ่งถ้ามีกระดาษสีขาว
+                    มาเป็น reflector สะท้อนแสงกลับเพื่อให้เกิดความสว่างบริเวณเงามืดแล้วด้วย
+                    ภาพจะออกมาดูดีโดยเราแทบไม่ต้องทำอะไรเลยค่ะ
+                    ภาพถ่ายผู้หญิงนิยมใช้ reflector เพื่อให้ใบหน้าดูนุ่มนวลเท่ากันหมดค่ะ แต่สำหรับผู้ชายมักจะไม่ค่อยใช้
+                    เพื่อให้อีกฝั่งที่ไม่ถูกแสงมืดกว่า และดูลึกลับน่าค้นหามากกว่าค่ะ
+                </p>
+                <p>
+                    5. ริมไลท์ ( rim light )
+                    มันคือแสงที่เกิดส่องโดนขอบวัตถุในรูปที่เราถ่ายค่ะ ทำให้ภาพดูมีมิติขึ้น
+                    สำหรับการถ่ายภาพนิยมมากที่จะให้เกิดแสงเหล่านี้บนเส้นผม
+                    rim light เกิดจากการที่แสงมีความเข้มมาก ส่องมากระทบวัตถุในฝั่งที่ตรงข้ามกับกล้องค่ะ
+                    ใช่ค่ะ..มันจะเกิดขึ้นเมื่อเราถ่ายย้อนแสง หลายคนกลัวมากกับการถ่ายย้อนแสง กลัวว่าหน้าจะดำ
+                    จุดนี้ไม่ต้องกลัวค่ะ เรามีวิธีแก้ไข แถมยังได้ Rim light ที่สวยงามกลับมาอีกด้วย มี 3
+                    วิธีให้เลือกดังนี้ 1. หามุมที่เหมาะสม 2. ใช้ reflector 3. ตบแฟลช
+                </p>
+                <p>
+                    6. แสงและเงา
+                </p>
+                <p>
+                    7. หน้าชัด หลังเบลอ และโบเก้
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <nav class="navbar-expand-sm navbar-light bg-dark">
+        <footer class="text-center p-5 mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <p style="color: white;">
+                            <i class="fas fa-copyright"></i> &copy; NUTTIYA 2023
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </nav>
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog custom-modal-size">
+            <div class="modal-content bg-body-secondary ">
+                <div class="modal-header">
+                    <h5 class="modal-title">CONTACT US</h5>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label>E-MAIL</label>
+                            <input type="email" placeholder="ป้อนอีเมลของคุณ" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <label>NAME</label>
+                            <input type="text" placeholder="ชื่อของคุณ" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <label>DETAIL/CONTACT BACK FOR YOU</label>
+                            <textarea id="" cols="20" rows="5" class="form-control"></textarea>
+                        </div>
+                    </form>
+                    <i class="fa-brands fa-instagram " style="margin-right: 0.5rem;"></i>
+                    <i class="fa-brands fa-facebook" style="margin-right: 0.5rem;"></i>
+                    <i class="fa-brands fa-line" style="margin-right: 0.5rem;"></i>
+                    <i class="fa-solid fa-envelope" style="margin-right: 0.5rem;"></i>
+                    <i class="fa-solid fa-phone" style="margin-right: 0.5rem;"></i>
+                    <p class="fw-bold mt-2"> MORE </p>
+                    <p class="fw-bold mt-3"> E-MAIL : nuttiyaphoto@gmail.com</p>
+                    <p class="fw-bold mt-3"> LINE@ : @nuttiyaphoto</p>
+                    <p class="fw-bold mt-3"> FACEBOOK : PHOTOGRAPHER</p>
+                    <p class="fw-bold mt-3"> TEL : 0988243415 / 0931055286</p>
+                </div>
+</body>
+
+</html>
